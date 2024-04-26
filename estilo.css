@@ -1,0 +1,288 @@
+body{
+	font-family: Helvetica, sans-serif;
+  background: #ced8f6 url("fundoP.jpg");
+  background-repeat: no repeat;
+  background-size: 100%;
+}
+ #principal{
+ 	width: 960px;
+ 	background: #ffffff9c; /* cor do fundo do texto o #ffffff é a cor branca e o 6c é a transparência */
+
+ 	margin: auto;
+ 	padding: 10px 20px;
+ }
+ul {
+  list-style-type: none;
+  margin: 10px;
+  padding:  0px;
+  overflow: hidden;
+  background-color: #009ACD;
+  border-radius: 20px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+#conteudo{
+	width: 100%;
+	float: left;
+	border: 2px;
+	border-color: black;
+	border-style: dotted;
+	border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+}
+#sidebar{
+	width: 280px;
+	float: right;	
+	border: 2px;
+	border-color: black;
+	border-style: dotted;
+	border-radius: 10px;
+}
+#sidebar ul{
+	list-style: none;
+}
+#sidebar ul li a{
+	color: #ff6600;
+	text-decoration: none;
+}
+#sidebar ul li a:hover{
+	text-decoration: underline;
+}
+#lateral img{
+	width: 290px;
+	float: center;
+}
+footer{
+  clear: both;
+  border: 2px;
+  border-color: black;
+  border-style: dotted;
+  border-radius: 10px;
+  margin: auto;
+  width:170px; 
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+.zoom{
+  overflow: hidden;
+}
+.zoom img{
+  max-width: 100%;
+  -moz-transition:all 0.3;
+  -webkit-transition:all 0.3;
+  transition:all 0.3;
+}
+.zoom:hover img{
+  -moz-transform: scale (1.1);
+  -webkit-transform: scale (1.1);
+  transform: scale (1.1);
+}
+div.imagens{
+  margin: auto;
+  width: 800px;
+}
+/*Formulário de Contato*/
+form{
+  margin: 10px auto;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 20px;
+}
+form div + div{
+  margin - top: 10px;
+}
+label{
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+textarea{
+  height: 80px;
+}
+input: focus, textarea:focus{
+  border-color: #000000;
+}
+.button{
+  padding-left: 90px;
+}
+button{
+  margin-left: 5px;
+}
+/*página sobre*/
+p{
+  text-indent: 20px;
+  text-align: justify;
+}
+.fotoempresa{
+  float: left;
+  width: 30%;
+  margin: 5px 10px 5px 5px;
+  border: 8px solid width;
+  box-shadow: 2px 2px 4px black;
+  text-align: center;
+  background-color: white;
+}
+.fotoempresa img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.fotoempresa:hover img{
+  opacity: 1;
+  transition: 1;
+}
+.fotoempresa1{
+  float: right;
+  width: 20%;
+  margin: 2px 5px 2px 2px;
+  border: 5px solid black;
+  box-shadow: 1px 1px 2px black;
+  text-align: center;
+  background-color: white;
+}
+.fotoempresa1 img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+.fotoempresa1:hover img{
+  opacity: 1;
+  transition: 1;
+}
+/*redes sociais*/
+footer{
+  clear: both;
+  color: #ff6600;
+  border: 2px;
+  border-color: black;
+  border-style: dashed;
+  border-radius: 10px;
+  margin: 40px auto;
+  height: 40px;
+}
+.rede{
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin-right: 10px; 
+  transition: all 0.4s ease-out;
+  border-radius: 50%;
+}
+.rede:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 4px 5px 10px 0px rgba(50,50,50,.8);
+}
+.rede#facebook{
+  background-color: #2372a3;
+}
+.rede#twitter{
+ background-color: #0084b4;
+}
+.rede#instagram{
+  background-color: #9400d3;
+}
+.rede#youtube{
+  background-color: #b00000;
+}
+.rede#whatsapp{
+  background-color: #34af23;
+}
+.icone{
+  margin: 0px auto;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
